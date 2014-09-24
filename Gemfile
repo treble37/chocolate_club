@@ -30,6 +30,41 @@ gem 'ember-rails'
 
 gem 'ember-source', '~> 1.7.0'
 
+group :development, :test do
+
+  # Use sqlite3 as the database for Active Record
+
+  gem "rspec-rails"
+
+  gem 'guard-rspec'
+
+  gem 'spork-rails'
+
+  gem "guard-spork"
+
+  gem 'childprocess'
+
+  gem 'pry'
+
+end
+
+group :test do
+
+  gem "factory_girl_rails"
+
+  gem "cucumber-rails"
+
+  gem "capybara"
+
+  gem "database_cleaner"
+
+  gem "launchy"
+
+  gem "poltergeist"
+
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
