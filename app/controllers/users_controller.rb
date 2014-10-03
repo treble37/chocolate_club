@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   respond_to :json
-  
+
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -80,6 +80,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params[:user]
+      params.require(:user).permit(:first_name, :last_name, :number_sent, :number_received)
     end
 end
