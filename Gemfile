@@ -30,6 +30,8 @@ gem 'ember-rails'
 
 gem 'ember-source', '~> 1.7.0'
 
+gem 'annotate'
+
 group :development, :test do
 
   # Use sqlite3 as the database for Active Record
